@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/juju/errors"
-	"github.com/wellsjo/ai-art/db"
+	"github.com/wellsjo/ai-art/server/db"
 )
 
 func main() {

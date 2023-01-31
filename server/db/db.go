@@ -9,7 +9,7 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/juju/errors"
-	"github.com/wellsjo/ai-art/job"
+	"github.com/wellsjo/ai-art/server/job"
 
 	_ "github.com/lib/pq"
 )

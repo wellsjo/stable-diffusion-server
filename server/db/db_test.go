@@ -8,7 +8,7 @@ import (
 	"github.com/juju/errors"
 	_ "github.com/lib/pq"
 	"github.com/stretchr/testify/assert"
-	"github.com/wellsjo/ai-art/job"
+	"github.com/wellsjo/ai-art/server/job"
 )
 
 func TestDB(t *testing.T) {

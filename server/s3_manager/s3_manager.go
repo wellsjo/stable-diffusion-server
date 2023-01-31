@@ -19,8 +19,10 @@ type S3Manager struct {
 }
 
 type Opts struct {
-	Bucket string
-	Region string
+	Bucket          string
+	Region          string
+	AccessKey       string
+	SecretAccessKey string
 }
 
 func New(opts Opts) (*S3Manager, error) {
@@ -28,8 +30,8 @@ func New(opts Opts) (*S3Manager, error) {
 		&aws.Config{
 			Region: aws.String(opts.Region),
 			Credentials: credentials.NewStaticCredentials(
-				ACCESS_KEY,
-				SECRET_ACCESS_KEY,
+				opts.AccessKey,
+				opts.SecretAccessKey,
 				"",
 			),
 		},

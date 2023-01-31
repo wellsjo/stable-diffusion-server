@@ -1,6 +1,6 @@
 .PHONY: build
 build:
-	go build -o bin/ai-art .
+	go build -o bin/stable-diffusion-server ./server
 
 .PHONY: start
 start:

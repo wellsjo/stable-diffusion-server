@@ -11,10 +11,10 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/juju/errors"
-	"github.com/wellsjo/ai-art/db"
-	"github.com/wellsjo/ai-art/job"
-	"github.com/wellsjo/ai-art/s3_manager"
-	"github.com/wellsjo/ai-art/ws"
+	"github.com/wellsjo/ai-art/server/db"
+	"github.com/wellsjo/ai-art/server/job"
+	"github.com/wellsjo/ai-art/server/s3_manager"
+	"github.com/wellsjo/ai-art/server/ws"
 )
 
 const NEXT_JOB_THROTTLE = 1 * time.Second
