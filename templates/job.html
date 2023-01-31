@@ -1,0 +1,36 @@
+<!--header.html-->
+
+<!doctype html>
+<html>
+  <head>
+    <script>
+      let _uuid = {{.job.UUID}}
+      let _jobArchived = {{.job.Archived}}
+      let _jobDone = {{.jobDone}}
+      let _imgURL = {{.imgURL}}
+      let _runningDurSecs = {{.runningDurSecs}}
+      console.log("uuid", _uuid)
+      console.log("archived", _jobArchived)
+      console.log("done", _jobDone)
+      console.log("img url", _imgURL)
+    </script>
+    <title>{{ .title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a href="/">Back</a>
+    <h1>{{ .job.Settings.Prompt }}</h1>
+    <h3>{{.job.Settings.Width}}x{{.job.Settings.Height}} @ {{.job.Settings.NumIterations}} Iterations</h3>
+    {{ if .job.Archived }}
+      {{ if eq .job.ArchiveReason.String "done" }}
+      <img src="{{.imgURL}}">
+      <h3>{{ .job.EndTime }}</h3>
+      {{ end }}
+    {{ else }}
+    <h3 id="job-status"></h3>
+    {{ end }}
+  </body>
+  <script src="/js/ws.js"></script>
+  <script src="/js/job.js"></script>
+</html>

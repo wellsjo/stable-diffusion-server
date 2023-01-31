@@ -1,0 +1,38 @@
+<!--header.html-->
+
+<!doctype html>
+<html>
+  <head>
+    <title>{{ .title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+#prompt {
+  height: 100px;
+  width: 300px;
+}
+    </style>
+  </head>
+  <body>
+  <form action="/job" method="POST" enctype="multipart/form-data">
+    <label for="prompt">Prompt:</label>
+    <input type="text" id="prompt" name="prompt">
+    <br/>
+    <label for="width">Width:</label>
+    <input type="text" id="width" name="width">
+    <br/>
+    <label for="height">Height:</label>
+    <input type="text" id="height" name="height">
+    <br/>
+    <label for="num-iter">Num Iterations:</label>
+    <input type="text" id="num-iter" name="num-iter">
+    <br/>
+    <input type="file" name="image" id="image"/>
+    <br/>
+    <br/>
+    <input type="submit" value="Submit">
+  </form>
+  </body>
+  <script src="/js/ws.js"></script>
+  <script src="/js/index.js"></script>
+</html>
