@@ -3,7 +3,7 @@
 This is a web app for running and viewing stable diffusion jobs. It works with both text-to-image and image-to-image models. You may specify an S3 bucket to upload images to, or save them locally. Each image generation job can take parameters for prompt, input image, and the number of iterations for stable diffusion to use.
 
 ## Example
-![example][https://github.com/wellsjo/stable-diffusion-server/blob/master/images/mock.png?raw=true]
+![example](https://github.com/wellsjo/stable-diffusion-server/blob/master/images/mock.png?raw=true)
 
 ## Run Locally
 ```
