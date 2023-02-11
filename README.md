@@ -5,7 +5,8 @@ This is a web app for running and viewing stable diffusion jobs. It works with b
 This could easily be used to generated as many images as your hardware can handle simultaneously. 
 
 ## Example
-"pirate ship" produced this using only 1 iteration!
+"pirate ship" produced this using only 1 iteration!  
+
 ![example](./images/example.png)
 
 ## Run Locally
