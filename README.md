@@ -3,9 +3,11 @@
 This is a web app for running and viewing stable diffusion jobs. It works with both text-to-image and image-to-image models. You may specify an S3 bucket to upload images to, or save them locally. Each image generation job can take parameters for prompt, input image, and the number of iterations for stable diffusion to use.
 
 ## Example
+"pirate ship" produced this using only 1 iteration!
 ![example](./images/example.png)
 
 ## Run Locally
+First, follow the instructions [here](./stable-diffusion-docker/README.md) to set up your access token with Huggingface API. Next, from the root of the repo:
 ```
 make setup
 make start
